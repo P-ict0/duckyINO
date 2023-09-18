@@ -1,4 +1,4 @@
-Invoke-WebRequest -Uri https://github.com/P-ict0/duckyINO/blob/main/payloads/funny/francer/france.png?raw=true -OutFile %UserProfile%\france.png
+Invoke-WebRequest -Uri "https://github.com/P-ict0/duckyINO/blob/main/payloads/funny/francer/france.png?raw=true" -OutFile "%UserProfile%/france.png"
 
 $Image="%UserProfile%/france.png"
 $code = @'
@@ -18,5 +18,3 @@ namespace Win32{
 
 add-type $code
 [Win32.Wallpaper]::SetWallpaper($Image)
-
-Remove-Item $Image
