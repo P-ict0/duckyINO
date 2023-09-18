@@ -1,4 +1,4 @@
-$Image="%UserProfile%/horse.jpg"
+$Image="%UserProfile%/france.png"
 $code = @' 
 using System.Runtime.InteropServices; 
 namespace Win32{ 
