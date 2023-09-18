@@ -1,5 +1,3 @@
-Invoke-WebRequest -Uri "https://github.com/P-ict0/duckyINO/blob/main/payloads/funny/francer/france.png?raw=true" -OutFile "%UserProfile%/france.png"
-
 $Image="%UserProfile%/france.png"
 $code = @'
 using System.Runtime.InteropServices;
