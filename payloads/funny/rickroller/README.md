@@ -1,3 +1,3 @@
 # RickRoller
 
-Opens Rick Roll in default browser
+Turns up the volume and opens Rick Roll in default browser
